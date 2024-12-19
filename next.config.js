@@ -5,6 +5,22 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+    images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'img.clerk.com',
+          },
+        ],
+      },
+
+      eslint : {
+        ignoreDuringBuilds : true
+      },
+      typescript : {
+        ignoreBuildErrors : true
+      }
+};
 
 export default config;

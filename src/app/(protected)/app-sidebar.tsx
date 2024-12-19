@@ -4,14 +4,12 @@ import {
   Bot,
   CreditCard,
   LayoutDashboardIcon,
-  MenuIcon,
   Plus,
-  Presentation,
+  Presentation
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
 import { Button } from "~/components/ui/button";
 import {
   Sidebar,
@@ -28,7 +26,6 @@ import {
 import { useProject } from "~/hooks/use-project";
 import { cn } from "~/lib/utils";
 
-type Props = {};
 
 const items = [
   {
@@ -55,7 +52,7 @@ const items = [
 
 
 
-const AppSidebar = (props: Props) => {
+const AppSidebar = () => {
   const pathname = usePathname();
   const { open } = useSidebar();
   const { projects, projectId, setProjectId } = useProject()

@@ -59,7 +59,7 @@ const AskQuestionCard = () => {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="sm:max-w-[80vw]">
+      <DialogContent className="sm:max-w-[80vw] ">
         <DialogHeader>
           <div className="flex items-center gap-2">
             <DialogTitle>
@@ -105,7 +105,7 @@ const AskQuestionCard = () => {
         <Button onClick={() => setOpen(false)}>Close</Button>
       </DialogContent>
 
-      <Card className="relative col-span-3">
+      <Card className="relative col-span-3 flex-1">
         <CardHeader>
           <CardTitle>Ask a Question</CardTitle>
         </CardHeader>
