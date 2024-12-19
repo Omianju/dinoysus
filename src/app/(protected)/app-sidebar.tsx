@@ -104,9 +104,10 @@ const AppSidebar = () => {
                       }}>
                         <div
                           className={cn(
-                            "item-center flex size-6 justify-center rounded-sm border bg-white text-primary",
+                            "flex item-center size-6 justify-center rounded-sm border bg-white text-primary",
                             {
                               "bg-primary text-white": project.id === projectId,
+                              "px-2" : open === false
                             },
                           )}
                         >
@@ -124,7 +125,7 @@ const AppSidebar = () => {
                 <Link href={"/create"}>
                   <Button variant={"outline"} className="w-fit" size={"sm"}>
                     <Plus />
-                    Create Project
+                    {open && "Create Project"}
                   </Button>
                 </Link>
               </SidebarMenuItem>
