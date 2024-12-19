@@ -8,6 +8,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
 import { constructMetadata } from "~/lib/metaData";
 
+
 export const metadata = constructMetadata()
 
 export default function RootLayout({
